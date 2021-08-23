@@ -1,1 +1,1 @@
-# demo-tfe-vcs-random-pet
+# demo-tfe-cli-random-pet
