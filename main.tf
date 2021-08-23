@@ -1,5 +1,5 @@
 terraform {
-  
+
   backend "remote" {
     organization = "lo-petgrackle"
 
@@ -7,7 +7,7 @@ terraform {
       name = "demo-tfe-cli-random-pet"
     }
   }
-  
+
   required_providers {
     random = {
       source = "hashicorp/random"
@@ -36,7 +36,7 @@ output "pet_name" {
 }
 
 resource "random_pet" "animal_name" {
-  length = var.ainmal_name_length
+  length = var.animal_name_length
 }
 
 output "animal_name" {
