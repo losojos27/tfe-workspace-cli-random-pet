@@ -27,7 +27,7 @@ output "pet_name" {
 }
 
 resource "random_pet" "animal_name" {
-  length = var.anmial.name.length
+  length = var.ainmal_name_length
 }
 
 output "animal_name" {
