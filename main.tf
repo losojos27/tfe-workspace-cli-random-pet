@@ -1,4 +1,13 @@
 terraform {
+  
+  backend "remote" {
+    organization = "lo-petgrackle"
+
+    workspaces {
+      name = "demo-tfe-cli-random-pet"
+    }
+  }
+  
   required_providers {
     random = {
       source = "hashicorp/random"
