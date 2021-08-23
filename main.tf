@@ -6,8 +6,20 @@ terraform {
   }
 }
 
+variable "pet_name_length" {
+  type        = number
+  description = "Number of words in pet name"
+  default     = 2
+}
+
+variable "animal_name_length" {
+  type        = number
+  description = "Number of words in animal name"
+  default     = 3
+}
+
 resource "random_pet" "pet_name" {
-  length = 2
+  length = var.pet_name_length
 }
 
 output "pet_name" {
@@ -15,7 +27,7 @@ output "pet_name" {
 }
 
 resource "random_pet" "animal_name" {
-  length = 2
+  length = var.anmial.name.length
 }
 
 output "animal_name" {
