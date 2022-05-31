@@ -1,1 +1,1 @@
-# demo-tfe-cli-random-pet
+# tfe-workspace-cli-random-pet
