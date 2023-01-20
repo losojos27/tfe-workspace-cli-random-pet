@@ -1,12 +1,11 @@
 terraform {
-  cloud {
-    organization = "lo-petgrackle"
+   # cloud {
+  #   organization = "<your_tfc_org>"
 
-    workspaces {
-      name = "cli-random-pet"
-    }
-  }
-}
+  #   workspaces {
+  #     name = "<your_workspace>"
+  #   }
+  # }
 
 variable "pet_name_length" {
   type        = number
